@@ -616,6 +616,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -674,6 +678,18 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-40 {
+  max-width: 10rem;
 }
 
 .flex-col {
