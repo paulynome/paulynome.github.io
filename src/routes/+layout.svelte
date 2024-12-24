@@ -8,7 +8,6 @@
 	let { children } = $props();
 </script>
 
-
 <!-- Barre de Navigation -->
   
   <div class="relative">
