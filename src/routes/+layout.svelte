@@ -21,7 +21,7 @@
 	  </NavBrand>
 	  <NavHamburger />
 	  <NavUl {activeUrl} {activeClass}>
-		<NavLi href="{base}/">Welcome</NavLi>
+		<NavLi href="{base}">Welcome</NavLi>
 		<NavLi href="{base}/engineering_course">Engineering course</NavLi>
 		<NavLi href="{base}/international_mobility">International Mobility</NavLi>
 		<NavLi href="{base}/civic">Sustainability & Civic Engagement</NavLi>
