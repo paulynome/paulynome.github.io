@@ -7,6 +7,7 @@
 
   import { page } from '$app/state';
   let activeUrl = $derived(page.url.pathname);
+  let base2 = base;
   let activeClass = 'text-white bg-red-500 md:bg-transparent md:text-red-600';
 	let { children } = $props();
 </script>
@@ -16,12 +17,12 @@
   <div class="relative">
 	<Navbar class="px-2 sm:px-4 py-2.5 sticky w-full z-20 top-0 start-0 border-b">
 	  <NavBrand href="/">
-		<img src="christmas_tree.png" class="me-3 h-6 sm:h-9" alt="Christmass Tree" />
+		<img src="{base}/christmas_tree.png" class="me-3 h-6 sm:h-9" alt="Christmass Tree" />
 		<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Paul Arlot</span>
 	  </NavBrand>
 	  <NavHamburger />
 	  <NavUl {activeUrl} {activeClass}>
-		<NavLi href="{base}">Welcome</NavLi>
+		<NavLi href="{base}/">Welcome</NavLi>
 		<NavLi href="{base}/engineering_course">Engineering course</NavLi>
 		<NavLi href="{base}/international_mobility">International Mobility</NavLi>
 		<NavLi href="{base}/civic">Sustainability & Civic Engagement</NavLi>
