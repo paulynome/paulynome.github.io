@@ -1,1 +1,1 @@
-<div class="text-center dark:text-white text-3xl">To be completed during next 3 years</div>
+<div class="title">To be completed during next 3 years</div>

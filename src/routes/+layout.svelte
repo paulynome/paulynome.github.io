@@ -3,8 +3,8 @@
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte';
 
   import { page } from '$app/state';
-  let activeUrl = $state(page.url.pathname);
-
+  let activeUrl = $derived(page.url.pathname);
+  let activeClass = 'text-white bg-red-500 md:bg-transparent md:text-red-600';
 	let { children } = $props();
 </script>
 
@@ -18,7 +18,7 @@
 		<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Paul Arlot</span>
 	  </NavBrand>
 	  <NavHamburger />
-	  <NavUl {activeUrl}>
+	  <NavUl {activeUrl} {activeClass}>
 		<NavLi href="/">Welcome</NavLi>
 		<NavLi href="/engineering_course">Engineering course</NavLi>
 		<NavLi href="/international_mobility">International Mobility</NavLi>

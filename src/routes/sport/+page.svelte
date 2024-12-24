@@ -1,4 +1,4 @@
-<div class="text-center mt-5 mx-20 font-extrabold text-5xl ">Sport and other activities</div>
+<div class="title ">Sport and other activities</div>
     <div class="dark:text-white text-lg whitespace-pre-line mx-20 md:mx-40 mb-10">
     I spent several years at the Conservatoire de Musique de Sète learning violin and viola, as well as basic music theory. Playing in an orchestra was an enriching experience.
     

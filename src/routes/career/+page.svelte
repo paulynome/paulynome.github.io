@@ -1,4 +1,4 @@
-<div class="text-center mt-5 mx-20 font-extrabold text-5xl ">Career Development</div>
+<div class="title ">Career Development</div>
     <div class="dark:text-white text-lg whitespace-pre-line mx-20 mb-10">
     <p class="box-border flex justify-center">
        <a class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" href="../content/CV anglais.pdf">CV in English</a>
