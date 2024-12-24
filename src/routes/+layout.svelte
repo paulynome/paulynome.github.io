@@ -1,5 +1,8 @@
 <script lang="ts">
 	import '../app.css';
+
+  import { base } from '$app/paths';
+
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte';
 
   import { page } from '$app/state';
@@ -18,12 +21,12 @@
 	  </NavBrand>
 	  <NavHamburger />
 	  <NavUl {activeUrl} {activeClass}>
-		<NavLi href="/">Welcome</NavLi>
-		<NavLi href="/engineering_course">Engineering course</NavLi>
-		<NavLi href="/international_mobility">International Mobility</NavLi>
-		<NavLi href="/civic">Sustainability & Civic Engagement</NavLi>
-		<NavLi href="/sport">Sport & other activities</NavLi>
-		<NavLi href="/career">Career Development</NavLi>
+		<NavLi href="{base}/">Welcome</NavLi>
+		<NavLi href="{base}/engineering_course">Engineering course</NavLi>
+		<NavLi href="{base}/international_mobility">International Mobility</NavLi>
+		<NavLi href="{base}/civic">Sustainability & Civic Engagement</NavLi>
+		<NavLi href="{base}/sport">Sport & other activities</NavLi>
+		<NavLi href="{base}/career">Career Development</NavLi>
 	  </NavUl>
 	</Navbar>
   </div>
