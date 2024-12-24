@@ -2,25 +2,29 @@
 	import '../app.css';
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte';
 
+  import { page } from '$app/state';
+  let activeUrl = $state(page.url.pathname);
+
 	let { children } = $props();
 </script>
 
 
 <!-- Barre de Navigation -->
   
-  <div class="relative px-8">
-	<Navbar class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b">
+  <div class="relative">
+	<Navbar class="px-2 sm:px-4 py-2.5 sticky w-full z-20 top-0 start-0 border-b">
 	  <NavBrand href="/">
-		<img src="/images/flowbite-svelte-icon-logo.svg" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
-		<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite</span>
+		<img src="christmas_tree.png" class="me-3 h-6 sm:h-9" alt="Christmass Tree" />
+		<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Paul Arlot</span>
 	  </NavBrand>
 	  <NavHamburger />
-	  <NavUl>
-		<NavLi href="/" active={true}>Home</NavLi>
-		<NavLi href="/about">About</NavLi>
-		<NavLi href="/docs/components/navbar">Navbar</NavLi>
-		<NavLi href="/pricing">Pricing</NavLi>
-		<NavLi href="/contact">Contact</NavLi>
+	  <NavUl {activeUrl}>
+		<NavLi href="/">Welcome</NavLi>
+		<NavLi href="/engineering_course">Engineering course</NavLi>
+		<NavLi href="/international_mobility">International Mobility</NavLi>
+		<NavLi href="/civic">Sustainability & Civic Engagement</NavLi>
+		<NavLi href="/sport">Sport & other activities</NavLi>
+		<NavLi href="/career">Career Development</NavLi>
 	  </NavUl>
 	</Navbar>
   </div>
