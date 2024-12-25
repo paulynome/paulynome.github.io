@@ -2,6 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+@layer base {
+
 body {
     background-color: rgb(241 245 249);
 }
@@ -21,4 +24,10 @@ h1 {
 
 p {
     text-align: justify;
+    @apply text-lg;
+    @apply whitespace-pre-line;
+    @apply mx-10;
+    @apply md:mx-40;
+}
+
 }

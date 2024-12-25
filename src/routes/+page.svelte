@@ -10,6 +10,6 @@
     </div>
   </figure>
 
-  <p class="dark:text-white text-lg whitespace-pre-line mx-20 md:mx-40 mb-10">
+  <p>
     After two years of CPGE (Classe préparatoire aux grandes écoles), I am now a student of ENSEEIHT, an engineering school based in Toulouse. 
   </p>

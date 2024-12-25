@@ -5,8 +5,8 @@
 
   import { page } from '$app/state';
   let activeUrl = $derived(page.url.pathname);
-  let activeClass = 'text-white bg-red-500 md:bg-transparent md:text-red-600';
-  let nonActiveClass = 'text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600';
+  let activeClass = 'text-white bg-red-500 md:py-5 md:-my-5 md:bg-transparent md:text-red-600';
+  let nonActiveClass = 'text-gray-700 hover:bg-gray-100 md:py-5 md:-my-5 md:hover:bg-transparent md:border-0 md:hover:text-red-600';
 	let { children } = $props();
 </script>
 
@@ -15,7 +15,7 @@
   <div class="relative">
 	<Navbar class="px-2 sm:px-4 py-2.5 sticky w-full z-20 top-0 start-0 border-b">
 	  <NavBrand href="/">
-		<img src="christmas_tree.png" class="me-3 h-6 sm:h-9" alt="Christmass Tree" />
+		<img src="christmass_tree.webp" class="me-3 h-6 sm:h-9" alt="Christmass Tree" />
 		<span class="text-black self-center whitespace-nowrap text-2xl font-semibold dark:text-white">Paul Arlot</span>
 	  </NavBrand>
 	  <NavHamburger />
