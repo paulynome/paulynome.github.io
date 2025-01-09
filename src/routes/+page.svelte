@@ -1,6 +1,11 @@
+<script>
+        import moi from '$lib/assets/profile_portfolio.png';
+        const altmoi = "Une image de moi";
+</script>
+
 <!-- Présentation -->
 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 mt-10 md:justify-center">
-    <img class="w-32 h-auto md:order-last  md:h-48 md:w-auto md:rounded-none rounded-full mx-auto md:mx-10" src="profile_portfolio.png" alt="">
+    <img class="w-32 h-auto md:order-last  md:h-48 md:w-auto md:rounded-none rounded-full mx-auto md:mx-10" src={moi} alt={altmoi}>
     <div class="pt-6 md:p-8 text-center md:text-left">
             <div class="text-5xl font-extrabold">Hi, I am</div>
             <div class="text-red-500 text-5xl font-extrabold" >Paul Arlot</div>
