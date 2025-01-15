@@ -8,7 +8,7 @@
     <img class="w-32 h-auto md:order-last  md:h-48 md:w-auto md:rounded-none rounded-full mx-auto md:mx-10" src={moi} alt={altmoi}>
     <div class="pt-6 md:p-8 text-center md:text-left">
             <div class="text-5xl font-extrabold">Hi, I am</div>
-            <div class="text-red-500 text-5xl font-extrabold" >Paul Arlot</div>
+            <div class="text-color-500 text-5xl font-extrabold" >Paul Arlot</div>
             <div class="text-black text-xl font-medium mt-4">
                     I'm an engineering student at <a href="https://www.enseeiht.fr" class="underline">ENSEEIHT</a>
             </div>

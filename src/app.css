@@ -30,4 +30,17 @@ p {
     @apply md:mx-40;
 }
 
+.text-color-500 {
+    @apply text-red-500;
+}
+
+.text-color-600 {
+    @apply text-red-600;
+}
+
+.bg-color-500 {
+    @apply bg-red-500;
+}
+
+
 }
