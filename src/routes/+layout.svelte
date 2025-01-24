@@ -1,20 +1,43 @@
 <script lang="ts">
 	import '../app.css';
 
-  import logo from '$lib/assets/christmass_tree.webp';
-  const logoalt = "Christmass Tree";
+ 	import logo from '$lib/assets/christmass_tree.webp';
+  	const logoalt = "Christmass Tree";
 
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte';
 
-  import { page } from '$app/state';
-  let activeUrl = $derived(page.url.pathname);
-  let activeClass = 'text-white bg-color-500 md:py-5 md:-my-5 md:bg-transparent md:text-color-600';
-  let nonActiveClass = 'text-gray-700 hover:bg-gray-100 md:py-5 md:-my-5 md:hover:bg-transparent md:border-0 md:hover:text-color-600';
+	import { page } from '$app/state';
+	let activeUrl = $derived(page.url.pathname);
+	let activeClass = 'text-white bg-color-500 md:py-5 md:-my-5 md:bg-transparent md:text-color-600';
+	let nonActiveClass = 'text-gray-700 hover:bg-gray-100 md:py-5 md:-my-5 md:hover:bg-transparent md:border-0 md:hover:text-color-600';
+		
+	const appName = "Paul ARLOT";
+	let title = $derived([appName, ...page.url.pathname.replace(/_/g," ").replace(/(\/\w|\s\w)/g, m => m.toUpperCase()).split("/").slice(1)].filter(Boolean).join(" - "));
 	
-  const appName = "Paul ARLOT";
-  let title = $derived([appName, ...page.url.pathname.replace(/_/g," ").replace(/(\/\w|\s\w)/g, m => m.toUpperCase()).split("/").slice(1)].filter(Boolean).join(" - "));
-  let { children } = $props();
+	const tab = ["/", "/engineering_course", "/international_mobility", "/civic", "/sport", "/career"];
+	let tabi = $derived(tab.indexOf(activeUrl));
+
+
+	import { goto } from '$app/navigation';
+	function on_key_down(e) {
+		 switch(e.keyCode) {
+			 case 37: //left
+				 goto(tab.at(tabi-1));
+				 break;
+			 case 39: //right
+				 if (tabi + 1 >= tab.length) goto(tab.at(0));
+				 else goto(tab.at(tabi+1))
+				 break;
+		 }
+	}
+	
+	
+	let { children } = $props();
 </script>
+
+<svelte:window
+    on:keydown={on_key_down}
+/>
 
 <svelte:head>
 	<title>{title}</title>
