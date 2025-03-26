@@ -2,7 +2,7 @@
 	import '../app.css';
 
  	import logo from '$lib/assets/easter_egg.png';
-  	const logoalt = "Christmass Tree";
+  	const logoalt = "Easter Egg";
 
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte';
 
