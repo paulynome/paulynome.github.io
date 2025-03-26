@@ -31,15 +31,15 @@ p {
 }
 
 .text-color-500 {
-    @apply text-red-500;
+    @apply text-emerald-500;
 }
 
 .text-color-600 {
-    @apply text-red-600;
+    @apply text-emerald-600;
 }
 
 .bg-color-500 {
-    @apply bg-red-500;
+    @apply bg-emerald-500;
 }
 
 

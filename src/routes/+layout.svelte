@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 
- 	import logo from '$lib/assets/christmass_tree.webp';
+ 	import logo from '$lib/assets/easter_egg.png';
   	const logoalt = "Christmass Tree";
 
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte';
