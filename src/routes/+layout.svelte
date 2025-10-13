@@ -1,8 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 
- 	import logo from '$lib/assets/easter_egg.png';
-  	const logoalt = "Easter Egg";
+ 	import logo from '$lib/assets/pumpkin.png';
+  	const logoalt = "A cute pumpkin";
 
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte';
 

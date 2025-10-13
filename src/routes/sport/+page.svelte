@@ -8,5 +8,5 @@
 
     I also joined <a href="https://net7.dev/" class="underline">Net7</a>, the school computer association where I did my first CTF.
 
-    I'm participating to <a href="https://prologin.org/" class="underline">Prologin</a> a national computer science competition.
+    I participated in the 2025 finale of <a href="https://prologin.org/" class="underline">Prologin</a>, a national computer science competition.
     </p>
