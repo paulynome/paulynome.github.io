@@ -15,6 +15,7 @@
     </div>
   </figure>
 
-  <p>
-    After two years of CPGE (Classe préparatoire aux grandes écoles), I am now a student of ENSEEIHT, an engineering school based in Toulouse. 
-  </p>
+  <p class="box-border flex justify-center">
+        <a class="text-white text-center bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" href="ppp.pdf">PPP</a>
+        <a class="text-white text-center bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" href="CV Francais.pdf">CV in French</a>
+     </p>
